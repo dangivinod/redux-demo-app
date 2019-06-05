@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import SyncValidationForm from '../form/register'
+import ContactForm from '../form/register.js'
 
 class RegisterUser extends React.Component {
   constructor(props){
@@ -10,14 +10,13 @@ class RegisterUser extends React.Component {
   }
 
   submit = values => {
-    debugger
     console.log(values)
   }
 
   render(){
     return(
       <div>
-        <SyncValidationForm onSubmit={this.submit} />
+       <ContactForm onSubmit={this.submit} />
       </div>
     )
   }
@@ -33,4 +32,4 @@ class RegisterUser extends React.Component {
 //   }
 // }
 
-export default connect(null, null)(RegisterUser)
+export default RegisterUser

@@ -2,12 +2,13 @@ import React from 'react';
 
 import RegisterUser from '../../../components/auth/register'
 
-
-const Register = () => {
-  debugger
-  return(
-    <RegisterUser />
-  )
+class Register extends React.Component {
+	render(){
+		debugger
+		return(
+			<RegisterUser />
+		)
+	}
 }
 
 export default Register;
