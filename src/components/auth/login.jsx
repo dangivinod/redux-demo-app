@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { Link } from "react-router-dom";
 import axios from "axios";
+
 import authActions from '../../actions';
 
 class LoginUser extends React.Component {
@@ -65,6 +67,7 @@ class LoginUser extends React.Component {
           <input type="password" placeholder="Enter Password" name="password" required onChange={this.UserLoginForm} />
 
           <button type="submit">Login</button>
+          <Link to="register">Registration</Link>
           <label>
             <input type="checkbox" checked="checked" name="remember" /> Remember me
           </label>
