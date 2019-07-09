@@ -10,6 +10,7 @@ class RegisterUser extends React.Component {
   }
 
   submit = values => {
+  debugger
     console.log(values)
   }
 

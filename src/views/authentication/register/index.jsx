@@ -4,7 +4,6 @@ import RegisterUser from '../../../components/auth/register'
 
 class Register extends React.Component {
 	render(){
-		debugger
 		return(
 			<RegisterUser />
 		)
